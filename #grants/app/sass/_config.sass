@@ -1,0 +1,45 @@
+@use 'sass:map'
+
+// Colors
+
+$black: #000
+$white: #fff
+$accent: #6966FF
+
+$text-color: #FFFFFF
+$bg-color: #1c1c28
+
+// Fonts
+
+$main-font: CircularStd, sans-serif
+$line-height: 1.5
+$font-weight: 400
+
+$font-size-xs: 1.6rem
+$font-size-md: 1.6rem
+$font-size-lg: 1.6rem
+$font-size-xl: 1.8rem
+
+// Breakpoints
+
+$screen-sm: 'min-width: 375px'
+$screen-md: 'min-width: 768px'
+$screen-lg: 'min-width: 1024px'
+$screen-xl: 'min-width: 1300px'
+$screen-xxl: 'min-width: 1440px'
+
+// Imports
+
+@import 'common/reset'
+@import 'node_modules/swiper/swiper'
+@import 'common/base'
+@import 'common/accordeon'
+
+// Font-Config
+
+@include font('CircularStd', normal, 400, '../font/CircularStd/CircularStd-Book.woff2')
+@include font('CircularStd', normal, 500, '../font/CircularStd/CircularStd-Medium.woff2')
+@include font('CircularStd', normal, 700, '../font/CircularStd/CircularStd-Bold.woff2')
+
+@include font('SpaceMono', normal, 400, '../font/SpaceMono/SpaceMono-Regular.woff2')
+@include font('SpaceMono', normal, 700, '../font/SpaceMono/SpaceMono-Bold.woff2')

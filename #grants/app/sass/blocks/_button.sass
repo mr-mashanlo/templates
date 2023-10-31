@@ -1,0 +1,33 @@
+.buttons
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  gap: 2rem
+
+.button
+  display: inline-block
+  width: 100%
+  padding: 1.2rem 4rem
+  font-weight: 500
+  font-size: 1.6rem
+  text-align: center
+  background: #393953
+  border-radius: .8rem
+  @media ( $screen-md )
+    width: auto
+  &--accent
+    background: $accent
+  &--white
+    background: $white
+    color: $accent
+  &--transparent
+    background: none
+  &--rounded
+    border-radius: 3rem
+  &--user
+    width: auto
+    padding: 1rem 3rem 1rem 1rem
+    display: inline-flex
+    align-items: center
+    gap: 1rem

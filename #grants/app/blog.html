@@ -1,0 +1,99 @@
+@@include('./parts/header.html', {
+'title': 'Home',
+'description': 'Description',
+'appname': 'Name',
+'url': 'https://site.com/',
+'icon': 'img/favicon.webp',
+})
+
+<div class="page page--overflow" id="page">
+
+  @@include('./parts/header-menu.html')
+
+  <section class="intro" id="intro">
+    <div class="container container--small">
+      <div class="hero hero--centered">
+        <h2 class="title title--h2">Blog</h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="news section" id="news">
+    <div class="container container--small">
+      <div class="category-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" class="button">Latest</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="button button--transparent">Funding round</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="button button--transparent">Spotlight</a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="button button--transparent">News & updates</a>
+          </div>
+        </div>
+      </div>
+      <ul class="grid grid--two">
+        <li class="grid__item">
+          <div class="card">
+            <img src="img/dev/card-img.webp" alt="" class="card__img">
+            <div class="card__content">
+              <p class="card__category">Funding round</p>
+              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
+            </div>
+            <div class="card__footer">
+              <p class="card__subtitle">January 1, 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="grid__item">
+          <div class="card">
+            <img src="img/dev/card-img.webp" alt="" class="card__img">
+            <div class="card__content">
+              <p class="card__category">Funding round</p>
+              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
+            </div>
+            <div class="card__footer">
+              <p class="card__subtitle">January 1, 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="grid__item">
+          <div class="card">
+            <img src="img/dev/card-img.webp" alt="" class="card__img">
+            <div class="card__content">
+              <p class="card__category">Funding round</p>
+              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
+            </div>
+            <div class="card__footer">
+              <p class="card__subtitle">January 1, 2022</p>
+            </div>
+          </div>
+        </li>
+        <li class="grid__item">
+          <div class="card">
+            <img src="img/dev/card-img.webp" alt="" class="card__img">
+            <div class="card__content">
+              <p class="card__category">Funding round</p>
+              <a href="#" class="title title--h4 card__text">Round 9 of approvals</a>
+            </div>
+            <div class="card__footer">
+              <p class="card__subtitle">January 1, 2022</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="buttons news__footer">
+        <a href="#" class="button">Load More</a>
+      </div>
+    </div>
+  </section>
+
+  @@include('./parts/footer-menu.html')
+
+</div>
+
+@@include('./parts/footer.html')

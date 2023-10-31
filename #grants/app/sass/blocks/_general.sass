@@ -1,0 +1,305 @@
+// page
+
+.page
+  background: url(../img/dev/grid-top.webp) center top / 100% no-repeat, url(../img/dev/grid-bottom.webp) center bottom / 100% no-repeat
+
+// grid
+
+.grid
+  display: grid
+  gap: 3rem
+  @media ( $screen-md )
+    gap: 1.5rem
+  @media ( $screen-xl )
+    gap: 3rem
+  &--two
+    @media ( $screen-md )
+      grid-template-columns: repeat(2, 1fr)
+  &--three
+    @media ( $screen-md )
+      grid-template-columns: repeat(3, 1fr)
+
+// feature
+
+.feature
+  text-align: center
+  font-family: SpaceMono, sans-serif
+  display: flex
+  flex-direction: column
+  text-align: center
+  &__title
+    font-size: 2rem
+  &__text
+    font-size: 1.6rem
+    color: #C8C7D8
+
+// heading
+
+.heading
+  max-width: 60rem
+  margin: 0 auto 4rem auto
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 2rem
+  text-align: center
+  @media ( $screen-md )
+    margin: 0 auto 8rem auto
+  &__link
+    color: $accent
+
+// hero
+
+.hero
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  text-align: center
+  @media ( $screen-md )
+    text-align: left
+  &--centered
+    text-align: center
+    @media ( $screen-md )
+      text-align: center
+  &__content
+    display: flex
+    align-items: center
+    gap: 2rem
+    flex-direction: column
+    @media ( $screen-md )
+      flex-direction: row
+  &__price
+    @media ( $screen-md )
+      margin-right: auto
+  &__category, &__price
+    font-family: SpaceMono, sans-serif
+    color: #A59EBA
+
+// card
+
+.card
+  height: 100%
+  background: #393953
+  border-radius: 1.6rem
+  font-size: 1.6rem
+  display: flex
+  flex-direction: column
+  position: relative
+  &__content
+    padding: 2.4rem
+    display: flex
+    flex-direction: column
+    align-items: start
+    gap: .5rem
+  &__img
+    width: 100%
+    aspect-ratio: 392 / 224
+  &__number
+    width: 3.5rem
+    aspect-ratio: 35 / 80
+  &__category, &__subtitle, &__price
+    font-family: SpaceMono, sans-serif
+    color: #A59EBA
+  &__subtitle
+    margin-bottom: 1rem
+  &__text
+    &--small
+      @media ( $screen-md )
+        width: 85%
+  &__header
+    width: 100%
+    display: flex
+    justify-content: space-between
+    gap: 1rem
+    @media ( $screen-md )
+      align-items: center
+  &__footer
+    margin-top: auto
+    padding: 2.4rem
+  &__status
+    margin-top: 1rem
+    @media ( $screen-md )
+      margin-top: 0
+      position: absolute
+      top: 2.4rem
+      right: 2.4rem
+
+// status
+
+.status
+  display: inline-block
+  padding: .4rem 1.6rem
+  background: #1C1C28
+  border-radius: 3rem
+  &--open
+    background: #6966FF
+  &--completed
+    background: #16B57F
+
+// users
+
+.users
+  display: flex
+  align-items: center
+  .user:not(:first-of-type)
+    margin-left: -1.5rem
+
+.user
+  width: 4.4rem
+  height: 4.4rem
+  &__img
+    width: 100%
+    height: 100%
+    aspect-ratio: 1 / 1
+    border-radius: 100%
+    border: .4rem solid #393953
+
+// team
+
+.team
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: center
+  gap: 2rem
+  @media ( $screen-md )
+    justify-content: start
+  &__img
+    width: 4rem
+    height: 4rem
+    object-fit: cover
+    border-radius: 100%
+
+// banner
+
+.banner
+  padding: 2.4rem
+  background: linear-gradient(326deg, #6966FF 24.5%, rgba(105, 102, 255, 0.36) 117.69%)
+  border-radius: .8rem
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 2rem
+  text-align: center
+  @media ( $screen-md )
+    padding: 4rem
+
+// section
+
+.section
+  &__subtitle
+    margin-bottom: 4rem
+  &__text
+    margin-bottom: 4rem
+    color: #C8C7D8
+
+// headeer
+
+.header
+  padding: 2rem 0
+  &__inner
+    display: flex
+    align-items: center
+
+// intro
+
+.intro
+  padding: 10rem 0 3rem
+  @media ( $screen-lg )
+    padding: 10rem 0 5rem 0
+  &__title
+    margin-bottom: 4rem
+    text-align: center
+  &__buttons
+    margin-bottom: 4rem
+    @media ( $screen-md )
+      margin-bottom: 8rem
+
+// project
+
+.project
+  &-swiper
+    .swiper-slide
+      height: auto
+
+// question
+
+.question
+  &-accordeon:not(:last-of-type)
+    margin-bottom: 8rem
+  &-accordeon
+    .content
+      color: #a59eba
+
+// news
+
+.news
+  &__footer
+    margin-top: 4rem
+    @media ( $screen-md )
+      margin-top: 8rem
+
+// category
+
+.category
+  &-swiper
+    margin-bottom: 4rem
+    @media ( $screen-lg )
+      margin-bottom: 6rem
+    .swiper-wrapper
+      width: auto
+    .swiper-slide
+      width: auto
+      padding: 0 1rem 0 0
+    &--large
+      display: flex
+      justify-content: center
+      .swiper-wrapper
+        width: auto
+        margin: 0 auto
+      .swiper-slide
+        padding: 0 1rem
+
+// menu
+
+.menu
+  display: flex
+  flex-direction: column
+  gap: 2rem
+  font-family: SpaceMono, sans-serif
+  @media ( $screen-md )
+    align-items: center
+    flex-direction: row
+  @media ( $screen-lg )
+    gap: 5rem
+  &--desktop
+    display: none
+    @media ( $screen-md )
+      display: flex
+  &__social
+    @media ( $screen-md )
+      margin-left: auto
+  &__link
+    color: #a59eba
+  &__icon
+    width: 2.2rem
+    height: 2.2rem
+
+// logo
+
+.logo
+  margin-right: auto
+  &__img
+    width: 6rem
+    @media ( $screen-md )
+      width: 10rem
+
+// social
+
+.social
+  flex-direction: row
+
+// color
+
+.accent
+  color: $accent

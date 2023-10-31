@@ -1,0 +1,133 @@
+@@include('./parts/header.html', {
+'title': 'Home',
+'description': 'Description',
+'appname': 'Name',
+'url': 'https://site.com/',
+'icon': 'img/favicon.webp',
+})
+
+<div class="page page--overflow" id="page">
+
+  @@include('./parts/header-menu.html')
+
+  <section class="intro section" id="intro">
+    <div class="container container--small">
+      <div class="hero">
+        <p class="hero__category">Category</p>
+        <p class="title title--h2">Youtube dYdX Education Library</p>
+        <div class="hero__content">
+          <p class="status status--completed">Completed</p>
+          <p class="hero__price">Funding amount: $5,000</p>
+          <a href="" class="button button--accent">Project Link</a>
+        </div>
+        <p class="title title--h4">Team</p>
+        <div class="team">
+          <a href="#" class="button button--rounded button--user"><img src="img/dev/user.svg" alt="" class="team__img"> Theresa Webb</a>
+          <a href="#" class="button button--rounded button--user"><img src="img/dev/user.svg" alt="" class="team__img"> Jenny Wilson</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="">
+    <div class="container container--small">
+      <p class="title title--h4 section__subtitle">Description</p>
+      <p class="section__text">Grant includes work on Funding Rates page, Rewards & Tracking Simulator, and CLI Trading tool. All will be combined in a community accessible webpage that will continue to host additional work done and maintenance on behalf of Chaos Labs.</p>
+      <p class="title title--h4 section__subtitle">Purpose</p>
+      <p class="section__text">Funding Rates page will help promote and guide traders around Perpetual premiums found across all assets traded on dYdX. Rewards & Tracking simulator will help market the benefits of trading on dYdX and assist current traders in mapping out their rewards. The CLI trading tool will make it easier for non-UI based traders to execute quickly on dYdX. The general purpose of this grant is to recruit Chaos Labs, a very qualified contributor, to work with dYdX on current and future projects.</p>
+      <p class="title title--h4 section__subtitle">Execution</p>
+      <p class="section__text">3 months to completion. Each individual grant is estimated to take 120 days, but will be worked on concurrently.</p>
+      <p class="title title--h4 section__subtitle">Payment structure</p>
+      <p class="section__text">25% upfront / 75% at completion of all Grants</p>
+      <p class="title title--h4 section__subtitle">Useful links</p>
+      <p class="section__text">
+        <a href="#" class="accent">www.granttitleproject.com</a> <br> <br>
+        <a href="#" class="accent">www.granttitleproject.com</a> <br> <br>
+        <a href="#" class="accent">www.granttitleproject.com</a> <br> <br>
+      </p>
+      <p class="title title--h4 section__subtitle">Funding transactions</p>
+      <ul class="grid">
+        <li class="grid__item">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__header">
+                <p class="title title--h4">Airtable Yearly Subscription</p>
+                <a href="" class="card__price">$500.00</a>
+              </div>
+              <p class="card__subtitle">Vendor</p>
+              <p class="card__text">Airtable is used to build the application form and store all application data.</p>
+            </div>
+          </div>
+        </li>
+        <li class="grid__item">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__header">
+                <p class="title title--h4">Expense title</p>
+                <a href="" class="card__price">$500.00</a>
+              </div>
+              <p class="card__subtitle">Vendor</p>
+              <p class="card__text">Airtable is used to build the application form and store all application data.</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="project section" id="project">
+    <div class="container container--small">
+      <div class="heading">
+        <h2 class="title title--h3 heading__title">More grants like this</h2>
+        <a href="#" class="heading__link">View all funded projects</a>
+      </div>
+      <ul class="grid grid--two">
+        <li class="grid__item">
+          <div class="card">
+            <div class="card__content">
+              <p class="card__category">Crowdfund</p>
+              <p class="title title--h4 card__title">Funding rates page</p>
+              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
+              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+            </div>
+            <div class="card__footer">
+              <div class="users">
+                <a href="" class="user">
+                  <img src="img/dev/user.svg" alt="" class="user__img">
+                </a>
+                <a href="" class="user">
+                  <img src="img/dev/user.svg" alt="" class="user__img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="grid__item">
+          <div class="card">
+            <div class="card__content">
+              <p class="card__category">Edition</p>
+              <p class="title title--h4 card__title">Tradingview integration</p>
+              <p class="card__subtitle">Funding amount: $5,000 - $6,000</p>
+              <p class="card__text">Grant will be used to build a dedicated web app to give traders a view of all dYdX asset funding rates across multiple timeframes. The page will be interactive to include deep diving across different assets and historical analysis of changing rates. It will also include API functionalities to allow developer access.</p>
+            </div>
+            <div class="card__footer">
+              <div class="users">
+                <a href="" class="user">
+                  <img src="img/dev/user.svg" alt="" class="user__img">
+                </a>
+                <a href="" class="user">
+                  <img src="img/dev/user.svg" alt="" class="user__img">
+                </a>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  @@include('./parts/footer-menu.html')
+
+</div>
+
+@@include('./parts/footer.html')

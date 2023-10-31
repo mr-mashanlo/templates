@@ -1,0 +1,51 @@
+html
+  font-size: calc(100vw / 375 * 10)
+  @media ( $screen-md )
+    font-size: calc(100vw / 768 * 10)
+  @media ( $screen-lg )
+    font-size: calc(100vw / 1024 * 8.5)
+  @media ( $screen-xl )
+    font-size: calc(100vw / 1300 * 10)
+  @media ( $screen-xxl )
+    font-size: calc(100vw / 1440 * 10)
+
+body
+  font-family: $main-font
+  font-size: $font-size-xs
+  font-weight: $font-weight
+  line-height: $line-height
+  color: $text-color
+  background: $bg-color
+  @media ( $screen-md )
+    font-size: $font-size-md
+  @media ( $screen-lg )
+    font-size: $font-size-lg
+  @media ( $screen-xl )
+    font-size: $font-size-xl
+
+img
+  display: block
+
+a
+  color: $text-color
+
+b
+  font-weight: 700
+
+.page
+  &--contain
+    contain: paint
+  &--overflow
+    overflow: hidden
+
+.container
+  max-width: 126rem
+  margin: 0 auto
+  padding: 0 1.5rem
+  &--small
+    max-width: 83rem
+
+.section
+  padding: 3rem 0
+  @media ( $screen-md )
+    padding: 5rem 0

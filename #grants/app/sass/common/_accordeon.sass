@@ -1,0 +1,36 @@
+.acc_section
+  border: none !important
+  border: none !important
+  border-top: .1rem solid rgba(#C6B6FF, .2) !important
+  border-radius: 0 !important
+  &:last-of-type
+    border-bottom: .1rem solid rgba(#C6B6FF, .2) !important
+
+.acc_head
+  background: none !important
+  border: none !important
+  padding: 2rem 5rem 2rem 0 !important
+  font-size: 2rem
+  cursor: pointer
+  position: relative
+  @media ( min-width: 640px )
+    padding: 2rem 6rem 2rem 2rem !important
+
+.acc_content
+  display: none
+  padding: 1rem
+  @media ( min-width: 640px )
+    padding: 0 2rem 2rem 2rem
+
+.acc-plus
+  width: 2.5rem
+  height: 2.5rem
+  position: absolute
+  top: calc(50% - 1.25rem)
+  right: 2rem
+  transition: .5s
+  path
+    fill: $accent
+    transition: .5s
+.acc_active .acc-plus
+  transform: rotate(45deg)
