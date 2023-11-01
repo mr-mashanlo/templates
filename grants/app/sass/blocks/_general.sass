@@ -85,6 +85,43 @@
   display: flex
   flex-direction: column
   position: relative
+  &--rotated-left
+    transform: rotate(1.5deg)
+  &--rotated-right
+    transform: rotate(-1.5deg)
+  &--arrow
+    &::before
+      content: ''
+      display: block
+      width: 8rem
+      height: 8rem
+      position: absolute
+      left: -5rem
+      z-index: 2
+      @media ( $screen-xl )
+        width: 9rem
+        height: 9rem
+    &-left-top
+      &::before
+        background: url(../img/dev/Right-arrow-curved-1.svg) center / contain no-repeat
+        left: calc(50% - 4rem)
+        top: -5rem
+        transform: rotate(90deg)
+        @media ( $screen-md )
+          transform: rotate(0deg)
+          top: -1.5rem
+          left: -5rem
+    &-left-bottom
+      &::before
+        background: url(../img/dev/Right-arrow-curved-2.svg) center / contain no-repeat
+        left: calc(50% - 4rem)
+        top: -5rem
+        transform: rotate(90deg)
+        @media ( $screen-md )
+          transform: rotate(0deg)
+          top: auto
+          bottom: -1.5rem
+          left: -5rem
   &__content
     padding: 2.4rem
     display: flex
@@ -303,3 +340,45 @@
 
 .accent
   color: $accent
+
+.wave
+  position: relative
+  &::before
+    content: ''
+    display: block
+    width: calc(100% + 4rem)
+    aspect-ratio: 2 / 1
+    background: url(../img/dev/wave.svg) center 90% / 90% no-repeat
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: -1
+
+.oval
+  position: relative
+  &::before
+    content: ''
+    display: block
+    width: calc(100% + 4rem)
+    aspect-ratio: 2 / 1
+    background: url(../img/dev/oval.svg) center / contain no-repeat
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: -1
+
+.sparkle
+  position: relative
+  &::before
+    content: ''
+    display: block
+    width: calc(100% + 4rem)
+    aspect-ratio: 3 / 2
+    background: url(../img/dev/sparkle.svg) top right / 50% no-repeat
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-35%, -60%)
+    z-index: -1

@@ -137,8 +137,8 @@ function browsersync() {
 }
 
 function startwatch() {
-  watch( `${getCurrentFolder()}/app/font`, { usePolling: true }, convertToWoff2, copyWoff2 );
-  watch( `${getCurrentFolder()}/app/img`, { usePolling: true }, convertToWebp, copyWebp );
+  watch( `${getCurrentFolder()}/app/font`, { usePolling: true }, parallel( convertToWoff2, copyWoff2 ) );
+  watch( `${getCurrentFolder()}/app/img`, { usePolling: true }, parallel( convertToWebp, copyWebp ) );
   watch( `${getCurrentFolder()}/app/script/**/*.js`, { usePolling: true }, scriptForDev );
   watch( `${getCurrentFolder()}/app/sass/**/*.sass`, { usePolling: true }, sassForDev );
   watch( [ `${getCurrentFolder()}/app/*.html` ], { usePolling: true }, html );
@@ -149,5 +149,3 @@ export { clearcache, html, sassForDev, sassForProd, scriptForDev, scriptForProd,
 export const build = series( removedist, html, sassForProd, scriptForProd, convertToWebp, copyWebp, convertToWoff2, copyWoff2 );
 
 export default series( clearcache, html, sassForDev, scriptForDev, convertToWebp, copyWebp, convertToWoff2, copyWoff2, parallel( browsersync, startwatch ) );
-
-// export default clearcache;
